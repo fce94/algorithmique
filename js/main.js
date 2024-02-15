@@ -169,3 +169,129 @@ console.log(A,B)
 let C = B - 2
 C = A
 console.log(A,C)
+
+// Declarer vos revenus
+// Tant que vos revenu ne sont pas superieur a 30 000 euros
+  // Chaque année mes augment de 10% grace mes placement
+// Combien d'année ca prendra
+
+
+let argent = 20000
+let année = 0
+
+while(argent < 30000){
+    argent = argent*1.10
+    année++
+}
+console.log(`au bout de ${année} ans il arrive a ${argent}`)
+
+/*
+ la population de la ville de marrakech est de 1 000 000 d'habitants et elle 
+ augmente de 50 000 habitants par an.
+ Celle de la ville Agadir est de 5000 000 habitants et elle augmente de 8% par an.
+ Ecrire un algo permettant de determiner dans combien d'années la population de la ville
+ d'agadir depassera celle de la ville de marrakech.
+  */
+
+ let mar = 1000000
+ let agd = 500000
+ let year = 0
+
+ while(agd < mar){
+    mar +=50000
+    agd *=1.08
+    year++
+ }
+ console.log(`Agadir depassera Marrakech au bout de ${year} le nombre d'habitant d'agadir est ${agd} alors que celui de marrakech est de ${mar} `)
+
+ // Boucle a itération definies (for)
+
+ for(let i = 0; i<12; i++){
+
+ }
+
+ // 0 x 7 = 0
+ let resultat 
+
+ for(let o=0; o < 11; o++){
+    resultat = o*7
+    console.log(`${o} x 7 = ${resultat}`)
+ }
+
+ /* Ecrire un algorithme qui fait deviner un chiffre à l'utilisateur en lui indiquant
+ si il est au dessus ou en dessous de la bonne valeur*/
+
+ // Demande à l'uilisateur un nombre
+
+ // Tant que la reponse n'et pas bonne
+   // Si sa reponse est inferieur au chiffre magique
+     // Le nombre magique est plus grand, donne moi une autre reponse
+   // Sinon
+     // Le nombre magique est plus petit, donne moi une autre reponse
+
+// Le nombre magique etait bien 
+
+// let reponses = prompt('essaye de deviner le chiffre magique')
+// let num = 3
+
+// while(reponses != num){
+//     if(reponses < num){
+//         reponses = prompt('le chiffre magique est plus grand')
+//     }else{
+//         reponses = prompt('le chiffre magique est plus petit')
+//     }
+    
+// }
+
+console.log('BRAVOOOOOOOO')
+
+/*-------------- Les fonctions --------------*/
+
+/* Une fonction est un bloc d'instructions reutilisable. 
+Elle peut prendre des parametres et renvoyer un resultat.
+Elle est declaree avec le mot clé fonctions*/
+
+function helloWorld(){
+    console.log('hello, world!')
+}
+
+helloWorld()
+
+function calculNasa(){
+    let res = 56138
+    let essence = 53385
+    let anneeLumiere = 3153861
+    let solution = res*essence/anneeLumiere*3543684358
+
+    return solution
+}
+
+let solution = calculNasa()
+
+// Ecrire une fonction qui affiche bonjour
+
+function bonjour(){
+    console.log('bonjour')
+}
+
+bonjour()
+
+// Ecrire une fonction qui prend en parametre et qui affiche bonjour [le prenom passé en parametre]
+
+function pres(name){
+    console.log(`bonjour ${name}`)
+}
+
+pres('sofia')
+
+// Ecrire une fonction qui calcule le perimetre d'un carré en lui passant la longueur d'un cote et l'afficher
+
+function carre(longueur){
+    let perimetre = longueur*4
+    console.log(`${perimetre}`)
+}
+
+carre(10)
+
+// Algorithme qui calcule et affiche le carre d'un nombre
+
